@@ -8,14 +8,14 @@ router.route('/')
 router.route('/findRegexCompany/:company')
   .get((...args )=> controller.findRegexCompany(...args))
 
-router.route('/aggregateByCountry/:country')
-  .get((...args) => controller.aggregateByCountry(...args))
+router.route('/aggregateChange/:key/:value')
+  .get((...args) => controller.aggregateChange(...args))
 
-router.route('/aggregateByIndustry/:industry')
-  .get((...args) => controller.aggregateByIndustry(...args))
+router.route('/aggregateAvgVolume/:key/:value')
+  .get((...args) => controller.aggregateAvgVolume(...args))
 
-router.route('/aggregateBySector/:sector')
-  .get((...args) => controller.aggregateBySector(...args))
+router.route('/aggregateROI/:key/:value')
+  .get((...args) => controller.aggregateROI(...args))
 
 router.route('/distinct/:key')
   .get((...args) => controller.distinct(...args))
