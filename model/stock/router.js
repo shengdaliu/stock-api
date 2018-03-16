@@ -5,34 +5,25 @@ const router = new Router()
 router.route('/')
   .get((...args) => controller.find(...args))
 
-router.route('/findRegexCompany/:company')
-  .get((...args )=> controller.findRegexCompany(...args))
+router.route('/findRegex')
+  .get((...args )=> controller.findRegex(...args))
 
-router.route('/aggregateChange/:key/:value')
+router.route('/aggregateChange')
   .get((...args) => controller.aggregateChange(...args))
 
-router.route('/aggregateChange/:key')
-  .get((...args) => controller.aggregateChange(...args))
-
-router.route('/aggregateAvgVolume/:key/:value')
-  .get((...args) => controller.aggregateAvgVolume(...args))
-  
-router.route('/aggregateAvgVolume/:key')
+router.route('/aggregateAvgVolume')
   .get((...args) => controller.aggregateAvgVolume(...args))
 
-router.route('/aggregateROI/:key/:value')
-  .get((...args) => controller.aggregateROI(...args))
-  
-router.route('/aggregateROI/:key')
+router.route('/aggregateROI')
   .get((...args) => controller.aggregateROI(...args))
 
-router.route('/distinct/:key')
+router.route('/aggregate20Days')
+  .get((...args) => controller.aggregate20Days(...args))
+
+router.route('/aggregate200Days')
+  .get((...args) => controller.aggregate200Days(...args))
+
+router.route('/distinct')
   .get((...args) => controller.distinct(...args))
-
-// router.route('/:id')
-//   .put((...args) => controller.update(...args))
-//   .get((...args) => controller.findById(...args))
-//   .delete((...args) => controller.remove(...args))
-
 
 module.exports = router
