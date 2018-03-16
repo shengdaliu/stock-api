@@ -8,6 +8,12 @@ router.route('/')
 router.route('/aggregateByCountry/:country')
   .get((...args) => controller.aggregateByCountry(...args))
 
+router.route('/aggregateByIndustry/:industry')
+  .get((...args) => controller.aggregateByIndustry(...args))
+
+router.route('/aggregateBySector/:sector')
+  .get((...args) => controller.aggregateBySector(...args))
+
 router.route('/distinct/:key')
   .get((...args) => controller.distinct(...args))
 
