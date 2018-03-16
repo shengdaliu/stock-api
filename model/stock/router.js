@@ -5,6 +5,9 @@ const router = new Router()
 router.route('/')
   .get((...args) => controller.find(...args))
 
+router.route('/findRegexCompany/:company')
+  .get((...args )=> controller.findRegexCompany(...args))
+
 router.route('/aggregateByCountry/:country')
   .get((...args) => controller.aggregateByCountry(...args))
 
