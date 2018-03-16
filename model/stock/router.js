@@ -11,10 +11,19 @@ router.route('/findRegexCompany/:company')
 router.route('/aggregateChange/:key/:value')
   .get((...args) => controller.aggregateChange(...args))
 
+router.route('/aggregateChange/:key')
+  .get((...args) => controller.aggregateChange(...args))
+
 router.route('/aggregateAvgVolume/:key/:value')
+  .get((...args) => controller.aggregateAvgVolume(...args))
+  
+router.route('/aggregateAvgVolume/:key')
   .get((...args) => controller.aggregateAvgVolume(...args))
 
 router.route('/aggregateROI/:key/:value')
+  .get((...args) => controller.aggregateROI(...args))
+  
+router.route('/aggregateROI/:key')
   .get((...args) => controller.aggregateROI(...args))
 
 router.route('/distinct/:key')
