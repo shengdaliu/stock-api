@@ -10,7 +10,7 @@ const routes = require('./routes')
 
 const app = express()
 
-//CORS: FCKIN IMPORTANT MIDDLEWARE DONT U DARE TOUCH IT
+//CORS: IMPORTANT MIDDLEWARE DONT U DARE TOUCH IT
 app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*'); // * => allow all origins
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,OPTIONS,DELETE');
