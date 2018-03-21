@@ -48,21 +48,28 @@ The server will be running on port 8080.
 
 ## Some API endpoint examples
 
-<code>GET</code> /stock
+* <code>GET</code> /stock
 
-This end will return all documents.
+    This end will return all documents.
+***
+* <code>GET</code> /stock/distinct?key=description.Country
 
-<code>GET</code> /stock/distinct?key=description.Country
+    This endpoint will return a list of name of distinct countries of all collections.
+***
+* <code>GET</code> /stock/findRegex?key=Company&value=apple
 
-This endpoint will return a list of name of distinct countries of all collections.
+    Return a list of company with "apple" in their Company key.
+***
+* <code>GET</code> /stock/aggregateChange?key=description.Country
 
-<code>GET</code> /stock/distinct?key=description.Country
+    Return average, min and max of Change of each Country.
+***
+* <code>GET</code> /stock/aggregateChange?key=description.Country&value=France
 
-<code>GET</code> /stock/distinct?key=description.Country
+    Return average, min and max of Change of Country France.
 
-<code>GET</code> /stock/distinct?key=description.Country
 
-<code>GET</code> /stock/distinct?key=description.Country
+Same for aggregateAvgVolume, aggregateROI, aggregate20Days, aggregate200Days.
 
 <!-- ## Contributing -->
 
