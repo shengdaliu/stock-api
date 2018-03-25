@@ -50,7 +50,11 @@ The server will be running on port 8080.
 
 * <code>GET</code> /stock
 
-    This end will return all documents.
+    This endpoint will return all documents.
+***
+* <code>GET</code> /stock?description.Country=USA&description.Sector=Healthcare
+
+    This endpoint will return all documents concerning American Healthcare sectors’ companies.
 ***
 * <code>GET</code> /stock/distinct?key=description.Country
 
