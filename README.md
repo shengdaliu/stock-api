@@ -56,20 +56,20 @@ The server will be running on port 8080.
 
     This endpoint will return a list of name of distinct countries of all collections.
 ***
-* <code>GET</code> /stock/findRegex?key=Company&value=apple
+* <code>GET</code> /stock/findRegex?Company=Apple
 
     Return a list of company with "apple" in their Company key.
 ***
-* <code>GET</code> /stock/aggregateChange?key=description.Country
+* <code>GET</code> /stock/aggregateChange?description.Country=France
 
-    Return average, min and max of Change of each Country.
+    Return average, min and max of 24h Change of Country France.
 ***
-* <code>GET</code> /stock/aggregateChange?key=description.Country&value=France
+* <code>GET</code> /stock/aggregateVolume?description.Country=France
 
-    Return average, min and max of Change of Country France.
+    Return average, min and max of 24h volume of Country France.
 
 
-Same for aggregateAvgVolume, aggregateROI, aggregate20Days, aggregate200Days.
+Same for aggregateROI, aggregate20Days, aggregate200Days.
 
 <!-- ## Contributing -->
 
