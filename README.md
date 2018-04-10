@@ -68,7 +68,7 @@ The server will be running on port 8080.
 
     Return average, min and max of 24h Change of Country France.
 ***
-* <code>GET</code> /stock/aggregateVolume?description.Country=France
+* <code>GET</code> /stock/aggregateAvgVolume?description.Country=France
 
     Return average, min and max of 24h volume of Country France.
 
